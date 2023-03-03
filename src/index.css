@@ -1,0 +1,35 @@
+html, 
+body {
+    height: 100%;
+    margin: unset;
+}
+
+@media all and (min-width: 600px) {
+    body {
+        background-image: url("/public/keyboard.jpg");
+        background-size: cover;
+    }
+        
+    #root-container {
+        height: calc(100% - 150px);
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+@media all and (max-width: 599px) {
+    body {
+        background-color: lightgray;
+    }
+}
+
+
+a {
+    color: lightseagreen;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
