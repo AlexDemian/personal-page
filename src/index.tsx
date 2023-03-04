@@ -31,7 +31,7 @@ root.render(
       <Navbar />
       <Page>
         <Grid
-          mt={4}
+          mt={{ xs: 0.5, md: 1, lg: 2 }}
           container
           spacing={2}
           justifyContent="center"
@@ -40,12 +40,12 @@ root.render(
           <Grid
             item
             mr={{ xs: 0, md: 2, lg: 3, xl: 6 }}
-            style={{ width: "450px", minWidth: "450px" }}
+            style={{ width: "400px", minWidth: "350px" }}
           >
             <Profile />
           </Grid>
 
-          <Grid item xs style={{ minWidth: "450px" }}>
+          <Grid item xs style={{ minWidth: "350px" }}>
             <SiteRouter />
           </Grid>
         </Grid>
