@@ -13,7 +13,7 @@ const SkillChip: React.FC<{ isPrimary?: boolean; label: string }> = (props) => (
   />
 );
 
-export const SkillsPage: React.FC = () => {
+export const IndexPage: React.FC = () => {
   const skillItems: StackItem[] = skills.map(({ caption, stack }) => {
     return {
       caption,

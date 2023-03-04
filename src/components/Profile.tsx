@@ -46,7 +46,7 @@ export const Profile: React.FC = () => {
           <Typography>
             Since: {since} ({now.getFullYear() - since} years)
           </Typography>
-          <Typography>English grade: Intermediate</Typography>
+          <Typography>English grade: Intermediate+</Typography>
           <Typography>Age: {age} y.o.</Typography>
           <Typography>Location: {location} 🇺🇦</Typography>
           {socialLinks.map(({ title, url }) => (

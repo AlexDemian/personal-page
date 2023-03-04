@@ -11,7 +11,7 @@ const Iframe = styled.iframe`
   border-image: unset;
 `;
 
-export const Posts: React.FC = () => {
+export const PostsPage: React.FC = () => {
   return (
     <>
       {acticles.map((acticle) => (
