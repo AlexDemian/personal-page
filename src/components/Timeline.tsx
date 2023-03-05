@@ -32,7 +32,9 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
           </TimelineSeparator>
 
           <TimelineContent sx={{ m: "auto 0" }}>
-            <Typography>{item.description}</Typography>
+            <Typography variant="overline" lineHeight={0.5}>
+              {item.description}
+            </Typography>
           </TimelineContent>
         </TimelineItem>
       ))}

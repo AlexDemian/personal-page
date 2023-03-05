@@ -3,8 +3,12 @@ import React from "react";
 import { ColumnStack, StackItem } from "../components/Stack";
 import { skills, summary, summaryHeader } from "../constants";
 import Typography from "@mui/material/Typography";
+import { AccordionCard } from "../components/Accordion";
 
-const SkillChip: React.FC<{ isPrimary?: boolean; label: string }> = (props) => (
+const SkillChip: React.FC<{
+  isPrimary?: boolean;
+  label: string;
+}> = (props) => (
   <Chip
     label={props.label}
     variant={props.isPrimary ? "filled" : "outlined"}
@@ -26,39 +30,64 @@ export const IndexPage: React.FC = () => {
     };
   });
 
-  skillItems.push({
-    caption: <i>* Tip:</i>,
-    body: (
-      <i>
-        <SkillChip label="Blue chip" isPrimary />
-        indicates at least intermediate proficiency
-        <br />
-        <SkillChip label="White chip" />
-        means I dealt with the feature a long time ago or/and I got only basic
-        undestanding during a short-term single project or playing sandbox
-      </i>
-    ),
-  });
-
   return (
     <Grid container spacing={0}>
       <Grid item xs={12} mb={2}>
-        <Card sx={{ px: 3 }}>
-          <Typography sx={{ mt: 2, mb: 1, mx: 2 }}>{summaryHeader}</Typography>
+        <Card sx={{ p: 2 }}>
+          <Typography>{summaryHeader}</Typography>
           <Box>
-            <ul>
-              {summary.split(".").map((part) => (
-                <li key={part}>
-                  <Typography>{part}.</Typography>
-                </li>
-              ))}
-            </ul>
+            {summary.map((part) => (
+              <Typography>{part}</Typography>
+            ))}
           </Box>
         </Card>
       </Grid>
 
-      <Grid item xs={12} mb={0.5}>
-        <Card>
+      <Grid item xs={12}>
+        <Card
+          sx={{ p: 1 }}
+          style={{
+            background: "rgba(255,255,255,0.5)",
+            borderBottomLeftRadius: "unset",
+            borderBottomRightRadius: "unset",
+          }}
+        >
+          <Chip
+            label="Blue chip"
+            variant="filled"
+            color="primary"
+            size="small"
+            sx={{ mr: 0.5, mb: 0.5 }}
+          />
+
+          <Typography variant="caption" lineHeight={1.8}>
+            indicates at least intermediate proficiency
+          </Typography>
+          <br />
+          <Chip
+            label="White chip"
+            variant="outlined"
+            color="default"
+            size="small"
+            sx={{ mr: 0.5 }}
+            style={{ backgroundColor: "white" }}
+          />
+
+          <Typography variant="caption" lineHeight={1.8}>
+            means I dealt with the feature a long time ago or/and I got only
+            basic undestanding during a short-term single project or playing
+            sandbox
+          </Typography>
+        </Card>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Card
+          style={{
+            borderTopLeftRadius: "unset",
+            borderTopRightRadius: "unset",
+          }}
+        >
           <ColumnStack items={skillItems} />
         </Card>
       </Grid>

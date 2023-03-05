@@ -1,5 +1,5 @@
 import { Timeline } from "../components/Timeline";
-import { Avatar, Card, Grid, Typography } from "@mui/material";
+import { Avatar, Box, Card, Grid, Typography } from "@mui/material";
 import {
   age,
   location,
@@ -31,7 +31,14 @@ export const Profile: React.FC = () => {
     <Card>
       <Grid container alignItems="center" direction="column" padding={2}>
         <Grid item mb={4}>
-          <Typography variant="h5">{fullName}</Typography>
+          <Typography
+            variant="overline"
+            lineHeight={1.5}
+            fontSize={24}
+            fontWeight={500}
+          >
+            {fullName}
+          </Typography>
         </Grid>
 
         <Grid item mb={4}>
@@ -58,7 +65,9 @@ export const Profile: React.FC = () => {
           ))}
         </Grid>
       </Grid>
-      <Timeline items={companyItems} />
+      <Box sx={{ mb: 2 }}>
+        <Timeline items={companyItems} />
+      </Box>
     </Card>
   );
 };

@@ -10,13 +10,18 @@ export const summaryHeader = `A framework agnostic full stack developer with exp
 REST APIs development, data processing, VoIP, performance
 challenges, and third-party integration.`;
 
-export const summary = `
-Worked in a team (both Ukrainian and international) and as a standalone developer and researcher.
-Dealt with legacy projects and have experience with challenging performance issues on both frontend and backend. 
-Have implemented a variety of classic techniques, such as chunked file uploads, virtual scrolling, SPA, Server-Sent Events, and others.
-Until the russian invasion was a mentor to a lot of junior developers at a big (~2k members ) Django Telegram community.
-In addition, a long time ago had experience with deep audio processing (numpy, Fast Fourier Transform, Goertzel algorithm)`;
-
+export const summary = [
+  "Worked in a team (both Ukrainian and international) and as a standalone developer and researcher.",
+  "Dealt with legacy projects and have experience with challenging performance issues on both frontend and backend.",
+  "Implemented a variety of classic techniques, such as:",
+  "  - chunked file uploads",
+  "  - virtual scrolling",
+  "  - SPA",
+  "  - Server-Sent Events",
+  "and others.",
+  "Until the russian invasion was a mentor to a lot of junior developers at a big (~2k members ) Django Telegram community.",
+  "In addition, a long time ago had experience with deep audio processing (numpy, Fast Fourier Transform, Goertzel algorithm).",
+];
 export const skills = [
   {
     caption: "Languages",
