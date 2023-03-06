@@ -8,7 +8,7 @@ export const ProjectsPage: React.FC = () => {
     <>
       {projects.map(({ name, description, period, stack, role, resps }) => {
         return (
-          <Card sx={{ mb: 2, px: 2, pt: 2, pb: 1 }} key={period + name}>
+          <Card sx={{ mb: 1, px: 2, pt: 2, pb: 1 }} key={period + name}>
             <Typography sx={{ fontWeight: "bold" }}>
               {period}: {name}
             </Typography>
@@ -31,11 +31,16 @@ export const ProjectsPage: React.FC = () => {
           </Card>
         );
       })}
-      <Card sx={{ mb: 2, px: 2, py: 1 }}>
-        <i>
-          Note: here are listed the most valued projects, but please note that
-          this is not an exhaustive list :)
-        </i>
+      <Card
+        sx={{ mb: 2, px: 2, py: 1 }}
+        style={{
+          background: "rgba(255,255,255,0.5)",
+        }}
+      >
+        <Typography variant="caption">
+          {`Note: here are listed the most valued projects, but that this is not
+          an exhaustive list :)`}
+        </Typography>
       </Card>
     </>
   );
