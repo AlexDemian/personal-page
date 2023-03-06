@@ -34,7 +34,7 @@ export const Profile: React.FC = () => {
           <Typography
             variant="overline"
             lineHeight={1.5}
-            fontSize={24}
+            fontSize={22}
             fontWeight={500}
           >
             {fullName}

@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
   return (
     <NavPaper>
       <Box display="flex" justifyContent="center" width="100%">
-        <Tabs value={location.pathname} centered variant="scrollable">
+        <Tabs value={location.pathname} variant="scrollable">
           {routes.map((route) => (
             <Tab
               key={route.path}

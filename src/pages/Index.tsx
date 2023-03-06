@@ -3,7 +3,6 @@ import React from "react";
 import { ColumnStack, StackItem } from "../components/Stack";
 import { skills, summary, summaryHeader } from "../constants";
 import Typography from "@mui/material/Typography";
-import { AccordionCard } from "../components/Accordion";
 
 const SkillChip: React.FC<{
   isPrimary?: boolean;
@@ -23,6 +22,7 @@ export const IndexPage: React.FC = () => {
       caption,
       body: stack.map((skill) => (
         <SkillChip
+          key={skill}
           label={skill.replaceAll("*", "")}
           isPrimary={!skill.includes("*")}
         />
@@ -37,7 +37,7 @@ export const IndexPage: React.FC = () => {
           <Typography>{summaryHeader}</Typography>
           <Box>
             {summary.map((part) => (
-              <Typography>{part}</Typography>
+              <Typography key={part}>{part}</Typography>
             ))}
           </Box>
         </Card>
