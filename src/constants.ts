@@ -108,7 +108,7 @@ export const companies = [
     position: "Python/NodeJS full-stack developer",
   },
   {
-    period: "2016-2019",
+    period: "2017-2019",
     name: "XOtel",
     url: "https://xotel.com/",
     position: "Python backend developer",
@@ -144,7 +144,8 @@ export const acticles = [
 
 export const projects = [
   {
-    name: "Ocilex",
+    name: "Gearheart: Ocilex",
+    url: "https://gearheart.io/articles/forge-viewer-our-experience-with-an-unusual-project/",
     description: "Construction cameras app",
     period: "2022",
     stack: [
@@ -161,10 +162,11 @@ export const projects = [
     ],
     role: "Full-Stack Developer",
     resps:
-      "full-stack development, working with IP cameras, generate timelapse playlists from images, integration with Autodesk Construction Cloud.",
+      "full-stack development, working with IP cameras, generating timelapse playlists from images, integration with Autodesk Construction Cloud.",
   },
   {
-    name: "Olivia",
+    name: "Gearheart: Olivia",
+    url: "https://gearheart.io/projects/olivia/",
     description: "Broker-dealer platform",
     period: "2019 - 2022",
     stack: [
@@ -184,19 +186,21 @@ export const projects = [
     resps: "development, performance optimization, technical core upgrade.",
   },
   {
-    name: "Smartsuite",
+    name: "Gearheart: Smartsuite",
+    url: "https://gearheart.io/projects/smartsuite/",
     description: "No-code platform",
     period: "2020",
     stack: ["Typescript", "ReactJS", "Toast UI"],
     role: "Full-Stack Developer",
     resps:
-      "development of a chart-view with a lot of chart types (such as donut, stacked bar, heatmap and other) and a bunch of sql-like aggregations on typescript.",
+      "development of a chart-view with a lot of chart types (such as donut, stacked bar, heatmap, and others) and a bunch of SQL-like aggregations using Typescript.",
   },
 
   {
-    name: "Pinkerton (damn, I love it!)",
+    name: "XOtel: Pinkerton (damn, I love it!)",
+    url: "https://xotel.com/en/",
     description: "VoIP anti-fraud solution and monitoring system",
-    period: "2016 - 2019",
+    period: "2017 - 2019",
     stack: [
       "Python",
       "Cython",

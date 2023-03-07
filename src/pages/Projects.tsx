@@ -6,31 +6,41 @@ import { projects } from "../constants";
 export const ProjectsPage: React.FC = () => {
   return (
     <>
-      {projects.map(({ name, description, period, stack, role, resps }) => {
-        return (
-          <Card sx={{ mb: 1, px: 2, pt: 2, pb: 1 }} key={period + name}>
-            <Typography sx={{ fontWeight: "bold" }}>
-              {period}: {name}
-            </Typography>
-            <Typography>{description}</Typography>
+      {projects.map(
+        ({ name, description, period, stack, role, resps, url }) => {
+          return (
+            <Card sx={{ mb: 1, px: 2, pt: 2, pb: 1 }} key={period + name}>
+              <Typography sx={{ fontWeight: "bold" }}>
+                {url ? (
+                  <a href={url} target="_blank" rel="noreferrer">
+                    {name}
+                  </a>
+                ) : (
+                  name
+                )}
+              </Typography>
 
-            <Typography>Role: {role}</Typography>
-            <Typography>Responsibilities: {resps}</Typography>
+              <Typography>Period: {period}</Typography>
+              <Typography>{description}</Typography>
 
-            <Box sx={{ mt: 2 }}>
-              {stack.map((point) => (
-                <Chip
-                  key={point}
-                  label={point}
-                  color="primary"
-                  variant="filled"
-                  sx={{ mr: 0.5, mb: 1 }}
-                />
-              ))}
-            </Box>
-          </Card>
-        );
-      })}
+              <Typography>Role: {role}</Typography>
+              <Typography>Responsibilities: {resps}</Typography>
+
+              <Box sx={{ mt: 2 }}>
+                {stack.map((point) => (
+                  <Chip
+                    key={point}
+                    label={point}
+                    color="primary"
+                    variant="filled"
+                    sx={{ mr: 0.5, mb: 1 }}
+                  />
+                ))}
+              </Box>
+            </Card>
+          );
+        }
+      )}
       <Card
         sx={{ mb: 2, px: 2, py: 1 }}
         style={{
