@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "@emotion/styled";
 import { AccordionCard } from "../components/Accordion";
 import { acticles } from "../constants";

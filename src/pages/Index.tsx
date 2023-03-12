@@ -1,7 +1,7 @@
 import { Box, Card, Chip, Grid } from "@mui/material";
 import React from "react";
 import { ColumnStack, StackItem } from "../components/Stack";
-import { skills, summary, summaryHeader } from "../constants";
+import { resps, skills, summary, summaryHeader } from "../constants";
 import Typography from "@mui/material/Typography";
 
 const SkillChip: React.FC<{
@@ -34,11 +34,40 @@ export const IndexPage: React.FC = () => {
     <Grid container spacing={0}>
       <Grid item xs={12} mb={2}>
         <Card sx={{ p: 2 }}>
-          <Typography>{summaryHeader}</Typography>
+          <Typography fontWeight="bold" sx={{ mb: 1 }}>
+            Summary
+          </Typography>
+          {summaryHeader.map((row) => (
+            <Typography key={row}>{row}</Typography>
+          ))}
+          <Typography sx={{ mt: 2 }}>
+            Reasons I could be a valuable addition to your team:
+          </Typography>
           <Box>
-            {summary.map((part) => (
-              <Typography key={part}>{part}</Typography>
-            ))}
+            <ul>
+              {summary.map((row) => (
+                <li>
+                  <Typography key={row}>{row}</Typography>
+                </li>
+              ))}
+            </ul>
+          </Box>
+        </Card>
+      </Grid>
+
+      <Grid item xs={12} mb={2}>
+        <Card sx={{ p: 2 }}>
+          <Typography fontWeight="bold" sx={{ mb: 1 }}>
+            Familiar responsibilities
+          </Typography>
+          <Box>
+            <ul>
+              {resps.map((row) => (
+                <li>
+                  <Typography key={row}>{row}</Typography>
+                </li>
+              ))}
+            </ul>
           </Box>
         </Card>
       </Grid>

@@ -6,16 +6,29 @@ export const since = 2017;
 export const age = 31;
 export const location = "Dnipro/Ukraine";
 
-export const summaryHeader = `A framework agnostic full stack developer with experience in
+export const summaryHeader = [
+  `A framework agnostic full stack developer with experience in
 REST APIs development, data processing, performance
-challenges, and third-party integration.`;
+challenges, and third-party integration.`,
+  `Basically, I'm experienced Django/DRF + ReactJS/Typescript developer;`,
+  `However, since early 2022, I have also been working with NodeJS/GraphQL and found this stack to be my current preference.`,
+];
 
 export const summary = [
   "Worked in a team (both Ukrainian and international) and as a standalone developer and researcher.",
-  "Dealt with legacy projects and have experience with challenging performance issues on both frontend and backend.",
-  "Until the russian invasion was a mentor to a lot of junior developers at a big (~2k members ) Django Telegram community.",
-  "In addition, a long time ago had experience with deep audio processing (numpy, Fast Fourier Transform, Goertzel algorithm).",
+  "Dealt with legacy projects and challenged performance issues on both frontend and backend.",
+  "Was a mentor to many junior developers at a large Django Telegram community with around 2,000 members until the Russian invasion.",
+  "Have experience working in various domains, including broker-dealer, no-code, VoIP, and audio/video processing.",
 ];
+
+export const resps = [
+  "Infrastructure prototyping",
+  "Feature  planning, estimation, and development",
+  "Working on technical debt",
+  "Problem-solving research",
+  "Technical communication with customers",
+];
+
 export const skills = [
   {
     caption: "Languages",
@@ -47,7 +60,7 @@ export const skills = [
       "Formik",
       "Yup",
       "Styled Components",
-      "Akita *",
+      "Akita*",
     ],
   },
   {
@@ -56,7 +69,7 @@ export const skills = [
   },
   {
     caption: "Protocols",
-    stack: ["HTTP", "Server-Sent Event", "Websocket*", "MQTT*"],
+    stack: ["HTTP", "Server-Sent Event", "GraphQL", "Websocket*", "MQTT*"],
   },
   {
     caption: "SQL & ORMs",
@@ -64,7 +77,7 @@ export const skills = [
   },
   {
     caption: "Databases",
-    stack: ["Postgres", "SQLite", "RedisDB", "MongoDB*"],
+    stack: ["Postgres", "MySQL", "SQLite", "RedisDB", "MongoDB*"],
   },
   {
     caption: "Server environment",
