@@ -22,7 +22,7 @@ export const ProjectsPage: React.FC = () => {
             <Typography>Period: {period}</Typography>
             <Typography>Role: {role}</Typography>
             <Typography>Responsibilities: {resps}</Typography>
-            <Typography>Implemented features:</Typography>
+            <Typography>Best of implemented features:</Typography>
 
             <Box sx={{ ml: 2 }}>
               <List items={features} />

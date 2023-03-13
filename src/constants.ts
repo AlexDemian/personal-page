@@ -23,10 +23,11 @@ export const summary = [
 
 export const resps = [
   "Infrastructure prototyping",
-  "Feature  planning, estimation, and development",
+  "Feature planning, estimation, and development",
   "Working on technical debt",
   "Problem-solving research",
   "Technical communication with customers",
+  "Writing technical articles",
 ];
 
 export const skills = [
@@ -69,7 +70,14 @@ export const skills = [
   },
   {
     caption: "Protocols",
-    stack: ["HTTP", "Server-Sent Event", "GraphQL", "Websocket*", "MQTT*"],
+    stack: [
+      "HTTP",
+      "Server-Sent Event",
+      "GraphQL",
+      "Websocket*",
+      "MQTT*",
+      "FTP*",
+    ],
   },
   {
     caption: "SQL & ORMs",
@@ -176,10 +184,12 @@ export const projects = [
     role: "Full-Stack Developer",
     resps: "infrastructure prototyping, development.",
     features: [
-      "Timelapse generation from images",
+      "Continuous timelapse generation from images",
       "Interactive 3D models rendering",
       "Third party integrations: Procore, Autodesk Construction Cloud",
-      "Distributed architecture",
+      "FTP Server (vsftpd)",
+      "Snapshots transfer: IP camera -> FTP -> S3 storage",
+      "Distributed cloud architecture",
     ],
   },
   {
@@ -220,7 +230,7 @@ export const projects = [
     period: "2020",
     stack: ["Typescript", "ReactJS", "Toast UI"],
     role: "Full-Stack Developer",
-    resps: "development of a chart visualization for user data",
+    resps: "development of chart visualization for user data",
     features: [
       "Typescript implementation of SQL-like functions: sum, avg, group by, etc",
       "Integration of Toast UI charts: bubble, stacked bar, heatmap, and others",
