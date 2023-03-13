@@ -3,6 +3,7 @@ import React from "react";
 import { ColumnStack, StackItem } from "../components/Stack";
 import { resps, skills, summary, summaryHeader } from "../constants";
 import Typography from "@mui/material/Typography";
+import { List } from "../components/List";
 
 const SkillChip: React.FC<{
   isPrimary?: boolean;
@@ -44,13 +45,7 @@ export const IndexPage: React.FC = () => {
             Reasons I could be a valuable addition to your team:
           </Typography>
           <Box>
-            <ul>
-              {summary.map((row) => (
-                <li>
-                  <Typography key={row}>{row}</Typography>
-                </li>
-              ))}
-            </ul>
+            <List items={summary} />
           </Box>
         </Card>
       </Grid>
@@ -61,13 +56,7 @@ export const IndexPage: React.FC = () => {
             Familiar responsibilities
           </Typography>
           <Box>
-            <ul>
-              {resps.map((row) => (
-                <li>
-                  <Typography key={row}>{row}</Typography>
-                </li>
-              ))}
-            </ul>
+            <List items={resps} />
           </Box>
         </Card>
       </Grid>

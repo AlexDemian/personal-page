@@ -33,9 +33,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-ul {
-    margin-block-start: unset;
-    margin-block-end: unset;
-    padding-inline-start: 20px;
-}

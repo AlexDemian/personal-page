@@ -159,7 +159,7 @@ export const projects = [
   {
     name: "Gearheart: Ocilex",
     url: "https://gearheart.io/articles/forge-viewer-our-experience-with-an-unusual-project/",
-    description: "Construction cameras app",
+    description: "MVP of construction cameras SPA",
     period: "2022",
     stack: [
       "NodeJs",
@@ -174,13 +174,18 @@ export const projects = [
       "Styled Components",
     ],
     role: "Full-Stack Developer",
-    resps:
-      "full-stack development, working with IP cameras, generating timelapse playlists from images, integration with Autodesk Construction Cloud.",
+    resps: "infrastructure prototyping, development.",
+    features: [
+      "Timelapse generation from images",
+      "Interactive 3D models rendering",
+      "Third party integrations: Procore, Autodesk Construction Cloud",
+      "Distributed architecture",
+    ],
   },
   {
     name: "Gearheart: Olivia",
     url: "https://gearheart.io/projects/olivia/",
-    description: "Broker-dealer platform",
+    description: "Broker-dealer platform: 8-year legacy project",
     period: "2019 - 2022",
     stack: [
       "Django",
@@ -197,6 +202,16 @@ export const projects = [
     ],
     role: "Full-Stack Developer",
     resps: "development, performance optimization, technical core upgrade.",
+    features: [
+      "2-10 times performance increase of slowest endpoints and pages",
+      "Integration of Typescript and ReactJS",
+      "Replacement of django-assets by Webpack",
+      "Painful migration: python2/django1 -> python3/django2",
+      "Chunked file upload",
+      "Virtual scroll",
+      "Email 2FA",
+      "Autologout on idle",
+    ],
   },
   {
     name: "Gearheart: Smartsuite",
@@ -205,14 +220,17 @@ export const projects = [
     period: "2020",
     stack: ["Typescript", "ReactJS", "Toast UI"],
     role: "Full-Stack Developer",
-    resps:
-      "development of a chart-view with a lot of chart types (such as donut, stacked bar, heatmap, and others) and a bunch of SQL-like aggregations using Typescript.",
+    resps: "development of a chart visualization for user data",
+    features: [
+      "Typescript implementation of SQL-like functions: sum, avg, group by, etc",
+      "Integration of Toast UI charts: bubble, stacked bar, heatmap, and others",
+    ],
   },
 
   {
-    name: "XOtel: Pinkerton (damn, I love it!)",
+    name: "XOtel: Pinkerton",
     url: "https://xotel.com/en/",
-    description: "VoIP anti-fraud solution and monitoring system",
+    description: "VoIP anti-fraud solution and monitoring system from scratch",
     period: "2017 - 2019",
     stack: [
       "Python",
@@ -227,6 +245,12 @@ export const projects = [
     ],
     role: "Project founder, Team lead, Full-stack developer",
     resps:
-      "scientific research; founding, development and maintaining an anti-fraud system over VoIP routes based on audio analysis.",
+      "scientific research, founding, development and maintaining an anti-fraud system over VoIP routes based on audio analysis.",
+    features: [
+      "Web app over Asterisk software",
+      "An algorithm for detecting noise, beeps, and pre-recorded audio",
+      "Bot-finder of the most profitable VoIP routes",
+      "Integration with internal CRM",
+    ],
   },
 ];

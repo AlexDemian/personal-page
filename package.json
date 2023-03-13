@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev-prettier": "onchange \"**/*.ts\" \"**/*.tsx\" -- prettier --write {{changed}}",
+    "dev-prettier": "onchange \"**/*.ts\" \"**/*.tsx\" \"**/*.json\" -- prettier --write {{changed}}",
     "dev-run": "react-scripts start",
     "dev": "concurrently \"npm:dev-*\"",
     "build": "react-scripts build"
