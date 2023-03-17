@@ -1,7 +1,7 @@
 export const staticUrl = process.env.PUBLIC_URL;
 
-export const fullName = "Alexey Demianenko";
-export const avatarPath = staticUrl + "avatar.png";
+export const fullName = "Oleksiy Demianenko";
+export const avatarPath = staticUrl + "avatar.jpg";
 export const since = 2017;
 export const age = 31;
 export const location = "Dnipro/Ukraine";
@@ -258,9 +258,9 @@ export const projects = [
       "scientific research, founding, development and maintaining an anti-fraud system over VoIP routes based on audio analysis.",
     features: [
       "Web app over Asterisk software",
-      "An algorithm for detecting noise, beeps, and pre-recorded audio",
+      "Algorithm for detecting noise, beeps, and pre-recorded audio",
       "Bot-finder of the most profitable VoIP routes",
-      "Integration with internal CRM",
+      "Integration with internal CMS",
     ],
   },
 ];
