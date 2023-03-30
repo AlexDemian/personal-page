@@ -11,7 +11,7 @@ export const summaryHeader = [
 REST APIs development, data processing, performance
 challenges, and third-party integration.`,
   `Basically, I'm experienced Django/DRF + ReactJS/Typescript developer;`,
-  `However, since early 2022, I have also been working with NodeJS/GraphQL and found this stack to be my current preference.`,
+  `However, since early 2022, I have also been working with NodeJS/GraphQL.`,
 ];
 
 export const summary = [
@@ -110,10 +110,6 @@ export const socialLinks = [
   {
     title: "Telegram",
     url: "https://t.me/AlexDemDp",
-  },
-  {
-    title: "Djinni",
-    url: "https://djinni.co/q/8834c3c41f",
   },
   {
     title: "a.demianenko92@gmail.com",

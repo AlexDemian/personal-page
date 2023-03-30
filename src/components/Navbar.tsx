@@ -19,12 +19,13 @@ export const Navbar: React.FC = () => {
     <NavPaper>
       <Box display="flex" justifyContent="center" width="100%">
         <Tabs value={location.pathname} variant="scrollable">
-          {routes.map((route) => (
+          {routes.map((route, index) => (
             <Tab
               key={route.path}
               label={route.name}
               value={route.path}
               onClick={() => navigate(route.path)}
+              tabIndex={index + 1}
             />
           ))}
         </Tabs>
