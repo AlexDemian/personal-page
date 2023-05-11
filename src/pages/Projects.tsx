@@ -1,8 +1,8 @@
-import { Box, Card, Chip } from "@mui/material";
-import React from "react";
-import Typography from "@mui/material/Typography";
-import { projects } from "../constants";
-import { List } from "../components/List";
+import { Box, Card, Chip } from '@mui/material';
+import React from 'react';
+import Typography from '@mui/material/Typography';
+import { projects } from '../constants';
+import { List } from '../components/List';
 
 export const ProjectsPage: React.FC = () => {
   return (
@@ -45,11 +45,11 @@ export const ProjectsPage: React.FC = () => {
       <Card
         sx={{ mb: 2, px: 2, py: 1 }}
         style={{
-          background: "rgba(255,255,255,0.5)",
+          background: 'rgba(255,255,255,0.5)',
         }}
       >
         <Typography variant="caption">
-          {`Note: here are listed the most valued projects, but that this is not
+          {`Note: here are listed the most valued projects, but that is not
           an exhaustive list :)`}
         </Typography>
       </Card>

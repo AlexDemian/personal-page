@@ -18,7 +18,7 @@ export const summary = [
   "Worked in a team (both Ukrainian and international) and as a standalone developer and researcher.",
   "Dealt with legacy projects and challenged performance issues on both frontend and backend.",
   "Was a mentor to many junior developers at a large Django Telegram community with around 2,000 members until the Russian invasion.",
-  "Have experience working in various domains, including broker-dealer, no-code, VoIP, and audio/video processing.",
+  "Worked under various domains, including broker-dealer, no-code, VoIP, and audio/video processing.",
 ];
 
 export const resps = [
@@ -119,10 +119,16 @@ export const socialLinks = [
 
 export const companies = [
   {
+    period: "2023",
+    name: "MINT",
+    url: "https://www.mint.ai/",
+    position: "Python FS developer",
+  },
+  {
     period: "2019-2023",
     name: "Gearheart",
     url: "https://gearheart.io/",
-    position: "Python/NodeJS full-stack developer",
+    position: "Python/NodeJS FS developer",
   },
   {
     period: "2017-2019",
