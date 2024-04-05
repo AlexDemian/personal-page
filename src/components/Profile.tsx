@@ -49,7 +49,7 @@ export const Profile: React.FC = () => {
             sx={{ width: 250, height: 250 }}
           />
         </Grid>
-        <Typography variant="h6">Full-stack developer (remote)</Typography>
+        <Typography variant="h6">BE Dev Lead</Typography>
         <Grid item>
           <Typography>
             Since: {since} ({now.getFullYear() - since} years)
