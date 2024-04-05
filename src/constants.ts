@@ -7,17 +7,16 @@ export const age = 31;
 export const location = "Dnipro/Ukraine";
 
 export const summaryHeader = [
-  `A framework agnostic full stack developer with experience in
+  `A framework agnostic full stack developer experienced in
 REST APIs development, data processing, performance
 challenges, and third-party integration.`,
-  `Basically, I'm experienced Django/DRF + ReactJS/Typescript developer;`,
-  `However, since early 2022, I have also been working with NodeJS/GraphQL.`,
+  `Cannot work without passion, therefore always not just an implementer, but dive deep into the product in general.`,
 ];
 
 export const summary = [
-  "Worked in a team (both Ukrainian and international) and as a standalone developer and researcher.",
-  "Dealt with legacy projects and challenged performance issues on both frontend and backend.",
-  "Was a mentor to many junior developers at a large Django Telegram community with around 2,000 members until the Russian invasion.",
+  "Worked in a team (both of, Ukrainian and international) and as a standalone developer and researcher as well.",
+  "Dealt with legacy projects and challenged complex performance issues on frontend and backend.",
+  "Have been a mentor to many junior developers at a large Django Telegram community with around 2,000 members until the Russian invasion.",
   "Worked under various domains, including broker-dealer, no-code, VoIP, and audio/video processing.",
 ];
 
@@ -108,16 +107,18 @@ export const socialLinks = [
     url: "https://www.linkedin.com/in/alex-demianenko-ua-dp/",
   },
   {
-    title: "Telegram",
-    url: "https://t.me/AlexDemDp",
-  },
-  {
     title: "a.demianenko92@gmail.com",
     url: "mailto:a.demianenko92@gmail.com",
   },
 ];
 
 export const companies = [
+  {
+    period: "2024",
+    name: "MINT",
+    url: "https://www.mint.ai/",
+    position: "BE Dev Lead",
+  },
   {
     period: "2023",
     name: "MINT",
